@@ -17,7 +17,7 @@
     <?php include_once("../../assets/parts/header.php") ?>
     <main class="">
         <div class="botao w-90 md:w-screen md:pr-10 justify-self-center justify-items-end pt-5 absolute">
-            <button type="button" id="backBtn" class=" flex items-center gap-3 bg-sky-600 hover:bg-sky-700 w-25 rounded-[10px] justify-center pt-2 pb-2 hidden transition">
+            <button type="button" id="backBtn" class=" flex md:fixed items-center gap-3 bg-sky-600 hover:bg-sky-700 w-25 rounded-[10px] justify-center pt-2 pb-2 hidden transition">
                         <span class="pajamas--go-back"></span> 
                         <p class="text-base font-medium">Voltar</p>
                     </button>
@@ -93,30 +93,7 @@
             </div>
 
         </div>
-        <footer class=" flex flex-col bg-white mt-20 pt-10 justify-center">
-            <div class="publis flex flex-col pl-10 md:pl-20">
-                <linha class="flex mb-2 items-center">
-                    <span class="material-symbols--sms self-center mr-2"></span>
-                    <p>Nos contate via SMS!</p>
-                </linha>
-                <linha class="flex mb-2 items-center">
-                    <span class="ic--baseline-discord self-center mr-2"></span>
-                    <p>Participe de nosso discord!</p>
-                </linha>
-                <linha class="flex mb-2 items-center">
-                    <span class="ic--baseline-whatsapp self-center mr-2"></span>
-                    <p>Fale conosco no whatsaap!</p>
-                </linha>
-                <linha class="flex mb-2 items-center">
-                    <span class="mdi--youtube2 self-center mr-2"></span>
-                    <p>Assista nossos videos no youtube!</p>
-                </linha>
-            </div>
-            <div class="imagem mr-auto ml-auto flex pb-20">
-                <img class=" w-60" src="../../assets/img/logoG2.png" alt="logo">
-            </div>
-
-        </footer>
+        <?php include_once("../../assets/parts/footer.php") ?>
     </main>
 
 </body>
