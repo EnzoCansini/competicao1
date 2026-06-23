@@ -16,8 +16,8 @@
 <body>
     <?php include_once("../../assets/parts/header.php") ?>
     <main class="">
-        <div class="botao w-90 md:w-screen md:pr-10 justify-self-center justify-items-end pt-5 absolute">
-            <button type="button" id="backBtn" class=" z-0 index flex items-center gap-3 bg-sky-600 hover:bg-sky-700 w-25 rounded-[10px] justify-center pt-2 pb-2 hidden transition">
+        <div class="botao w-90 md:w-full md:pr-10 justify-self-center justify-items-end pt-5 absolute">
+            <button type="button" id="backBtn" class=" flex md:fixed items-center gap-3 bg-sky-600 hover:bg-sky-700 w-25 rounded-[10px] justify-center pt-2 pb-2 hidden transition">
                 <span class="pajamas--go-back"></span>
                 <p class="text-base font-medium">Voltar</p>
             </button>
@@ -56,36 +56,6 @@
                     </button>
                 </div>
             </form>
-            <script>
-                const step1 = document.getElementById('cadastro1');
-                const step2 = document.getElementById('cadastro2');
-                const nextBtn = document.getElementById('nextBtn');
-                const backBtn = document.getElementById('backBtn');
-
-                function showStep(step) {
-                    if (step === 1) {
-                        step1.classList.remove('hidden');
-                        step2.classList.add('hidden');
-                        backBtn.classList.add('hidden');
-                    } else {
-                        step1.classList.add('hidden');
-                        step2.classList.remove('hidden');
-                        backBtn.classList.remove('hidden');
-                    }
-                }
-
-                if (nextBtn) {
-                    nextBtn.addEventListener('click', function() {
-                        showStep(2);
-                    });
-                }
-
-                if (backBtn) {
-                    backBtn.addEventListener('click', function() {
-                        showStep(1);
-                    });
-                }
-            </script>
             <div class="botoes flex w-83 justify-between">
                 <a href="../login-proficional" class=" flex bg-yellow-300 w-40 rounded-[10px] justify-center pt-2 pb-2">
                     <p class="text-base font-medium">Ja tenho conta</p>
@@ -99,4 +69,5 @@
         <?php include_once("../../assets/parts/footer.php") ?>
     </main>
 
+    <script src="../../assets/backend/cadastro.js"></script>
 </body>

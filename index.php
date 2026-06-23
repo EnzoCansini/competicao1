@@ -48,7 +48,6 @@
             <div class="quadro place-items-center">
                 <div class="icon">
                     <span class="uil--heart-medical"></span>
-                    </span>
                 </div>
                 <div class="texto text-center">Lorem ipsum dolor sit amet </div>
             </div>

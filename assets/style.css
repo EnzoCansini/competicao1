@@ -23,3 +23,24 @@ h2 {
     font-weight: bold;
     unicode-bidi: isolate;
 }
+
+.pequeno{
+    width: 1em;
+    height: 1em;
+}
+.medio{
+    width: 1.5em;
+    height: 1.5em;
+}
+.grande{
+    width: 2em;
+    height: 2em;
+}
+.grandeg{
+    width: 2.5em;
+    height: 2.5em;
+}
+.grandegrid{
+    width: 7em;
+    height: 7em;
+}
