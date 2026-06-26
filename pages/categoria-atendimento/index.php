@@ -26,12 +26,12 @@
             <h1>Selecione a categoria do atendimento</h1>
         </div>
         <div class="itens grid grid-cols-2 gap-5 w-90 md:grid-cols-3 md:w-135 justify-self-center">
-            <div class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40">
+            <a href="../motivo-atendimento" class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40">
                 <div class="icone justify-self-center">
                     <span class="uil--heart-medical grandegrid"></span>
                 </div>
                 <p class=" justify-self-center text-xl">Cardiovascular</p>
-            </div>
+            </a>
             <div class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40">
                 <div class="icone justify-self-center">
                     <span class="uil--heart-medical grandegrid"></span>

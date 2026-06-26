@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <?php include_once("../../assets/parts/header.php") ?>
+    <?php include_once("../../assets/parts/headerIn.php") ?>
     <main>
         <div class=" flex titulo mb-3 w-90 justify-self-center items-center justify-between">
             <h2>Registrar Indicadores de saude</h2>
