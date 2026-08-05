@@ -25,7 +25,7 @@
             <img class=" w-60" src="../../assets/img/logoG2.png" alt="logo">
         </div>
         <div class="inputs grid grid-cols-1 justify-self-center justify-items-center gap-3">
-            <form action="../inicio" class=" justify-self-center justify-items-center">
+            <form action="../inicio-proficional" class=" justify-self-center justify-items-center">
                 <div id="cadastro1" class="cadastro1 flex flex-col gap-3">
                     <p class="text-2xl text-left text-black">Informe seus dados para entrar<br>na sua conta de proficional</p>
 

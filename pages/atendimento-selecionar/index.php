@@ -19,7 +19,7 @@
         <div class="titulo pt-3 w-90 md:w-150 justify-self-center">
             <h2>Selecione o profional desejado que fara seu atendimento</h2>
         </div>
-        <div class="botao w-90 md:w-full md:pr-10 justify-self-center justify-items-end py-2">
+        <div class="botao w-90 md:w-150 justify-self-center justify-items-end py-2">
             <div class="botoes flex gap-2">
                 <button type="button" id="backBtn" class=" flex items-center gap-2 bg-sky-600 hover:bg-sky-700 w-25 rounded-[10px] justify-center pt-2 pb-2 transition">
                     <span class="mdi--filter medio"></span>

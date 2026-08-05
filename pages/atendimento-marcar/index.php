@@ -89,8 +89,11 @@
                             </span>
                         </label>
                     </section>
-                    <p class="text-xl">Selecione a Hora</p>
-                    <section id="etapa2" class="horas flex flex-wrap gap-2 items-center justify-center hidden">
+                    <section id="etapa2" class="horas flex flex-col items-center justify-center hidden"> 
+                        <div class="textoss w-full justify-start my-2">
+                        <p class="text-xl">Selecione a Hora</p>
+                    </div>
+                        <div class="flex flex-wrap gap-2 items-center justify-center">
                         <label class="cursor-pointer">
                             <input type="radio" name="hora" value="07:00" class="hidden hora-opcao">
                             <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
@@ -169,6 +172,7 @@
                                 19:00
                             </span>
                         </label>
+                        </div>
                     </section>
                     <section id="etapa3" class="aceitacao flex flex-col gap-2 mt-2 hidden">
                         <p>Voce aceita que caso seu atendimento nao possoa ser confirmado pelo medico ele seja repassado para outro profissional?</p>
@@ -181,7 +185,7 @@
                             <label for="confirmacao-nao">Nao Aceito</label>
                         </div>
                     </section>
-                    <button type="submit" id="btnFinal" class=" flex bg-yellow-300 hover:bg-yellow-400 w-83 md:w-143 rounded-[10px] justify-center pt-2 pb-2 mt-2 transition">
+                    <button type="submit" id="btnFinal" class=" flex bg-yellow-300 hover:bg-yellow-400 w-83 md:w-143 rounded-[10px] justify-center pt-2 pb-2 mt-2 transition hidden">
                         <p class="text-base font-medium">Selecionar</p>
                     </button>
                 </form>

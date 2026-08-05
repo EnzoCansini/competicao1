@@ -21,19 +21,23 @@
         </a>
     </header>
     <main class="">
-        <img src="./assets/img/Rectangle 1.png" alt="">
-        <div class="textos m-3">
-            <h1>Quem somos</h1>
-            <p class="">A InovaVida Digital nasceu com a missão de transformar o cuidado com a saúde na terceira idade, tornando o acesso à informação, acompanhamento médico e prevenção de doenças mais simples, humano e acessível.
-                Desenvolvemos soluções digitais voltadas especialmente para idosos e suas famílias, ajudando no acompanhamento de doenças crônicas, na organização de tratamentos e no monitoramento de indicadores de saúde de forma prática e intuitiva. Nosso objetivo é reduzir barreiras tecnológicas e aproximar as pessoas de um cuidado contínuo e preventivo.
-                Acreditamos que tecnologia e bem-estar devem caminhar juntos. Por isso, criamos uma plataforma pensada para facilitar o dia a dia, oferecendo acesso a conteúdos confiáveis sobre saúde, lembretes importantes, acompanhamento personalizado e mais autonomia para quem busca viver com qualidade de vida.
-                Mais do que uma startup de tecnologia, somos uma iniciativa dedicada a promover longevidade saudável, cuidado preventivo e inclusão digital para a melhor idade.</p>
-            <div class="flex botao justify-end mt-4">
-                <a href="./pages/cadastro" class=" bg-yellow-300 rounded-lg p-5 pt-2 pb-2">
-                    <p class="text-base font-medium">Entrar</p>
-                </a>
+        <section class="flex flex-col">
+            <div class="imagem static">
+                <img class="" src="./assets/img/Rectangle 1.png" alt="">
             </div>
-        </div>
+            <div class="textos m-3">
+                <h1>Quem somos</h1>
+                <p class="">A InovaVida Digital nasceu com a missão de transformar o cuidado com a saúde na terceira idade, tornando o acesso à informação, acompanhamento médico e prevenção de doenças mais simples, humano e acessível.
+                    Desenvolvemos soluções digitais voltadas especialmente para idosos e suas famílias, ajudando no acompanhamento de doenças crônicas, na organização de tratamentos e no monitoramento de indicadores de saúde de forma prática e intuitiva. Nosso objetivo é reduzir barreiras tecnológicas e aproximar as pessoas de um cuidado contínuo e preventivo.
+                    Acreditamos que tecnologia e bem-estar devem caminhar juntos. Por isso, criamos uma plataforma pensada para facilitar o dia a dia, oferecendo acesso a conteúdos confiáveis sobre saúde, lembretes importantes, acompanhamento personalizado e mais autonomia para quem busca viver com qualidade de vida.
+                    Mais do que uma startup de tecnologia, somos uma iniciativa dedicada a promover longevidade saudável, cuidado preventivo e inclusão digital para a melhor idade.</p>
+                <div class="flex botao justify-end mt-4">
+                    <a href="./pages/cadastro" class=" bg-yellow-300 rounded-lg p-5 pt-2 pb-2">
+                        <p class="text-base font-medium">Entrar</p>
+                    </a>
+                </div>
+            </div>
+        </section>
         <img src="./assets/img/Rectangle 3.png" alt="">
         <div class="textos ml-3">
             <h1>Oferecemos</h1>
