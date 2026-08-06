@@ -32,7 +32,7 @@
                 <p>Hora: 15:31</p>
                 <p>Paciente: Allan Smith</p>
                 <p>Modalidade: Exercicios</p>
-                <a href="../atendimento-anterior-detalhes" class=" flex items-center gap-2 bg-yellow-300 w-40 rounded-[10px] justify-center justify-self-end pt-2 pb-2 md:mt-0 mt-3">
+                <a href="../p-atendimento-anterior-detalhes" class=" flex items-center gap-2 bg-yellow-300 w-40 rounded-[10px] justify-center justify-self-end pt-2 pb-2 md:mt-0 mt-3">
                     <span class="mdi--eye"></span>
                     <p class="text-base font-medium">Vizualizar</p>
                 </a>
@@ -43,7 +43,7 @@
                 <p>Hora: 15:31</p>
                 <p>Paciente: Allan Smith</p>
                 <p>Modalidade: Exercicios</p>
-                <a href="../editar-indicador" class=" flex items-center gap-2 bg-yellow-300 w-40 rounded-[10px] justify-center justify-self-end pt-2 pb-2 md:mt-0 mt-3">
+                <a href="../p-atendimento-anterior-detalhes" class=" flex items-center gap-2 bg-yellow-300 w-40 rounded-[10px] justify-center justify-self-end pt-2 pb-2 md:mt-0 mt-3">
                     <span class="mdi--eye"></span>
                     <p class="text-base font-medium">Vizualizar</p>
                 </a>
@@ -54,7 +54,7 @@
                 <p>Hora: 15:31</p>
                 <p>Paciente: Allan Smith</p>
                 <p>Modalidade: Exercicios</p>
-                <a href="../editar-indicador" class=" flex items-center gap-2 bg-yellow-300 w-40 rounded-[10px] justify-center justify-self-end pt-2 pb-2 md:mt-0 mt-3">
+                <a href="../p-atendimento-anterior-detalhes" class=" flex items-center gap-2 bg-yellow-300 w-40 rounded-[10px] justify-center justify-self-end pt-2 pb-2 md:mt-0 mt-3">
                     <span class="mdi--eye"></span>
                     <p class="text-base font-medium">Vizualizar</p>
                 </a>
