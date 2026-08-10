@@ -21,10 +21,11 @@
         </a>
     </header>
     <main class="">
-        <section class="flex flex-col">
-            <div class="imagem static">
-                <img class="" src="./assets/img/Rectangle 1.png" alt="">
+        <section class="flex flex-col mx-auto max-w-200">
+            <div class="imagem w-90">
+                <img class=" object-cover" src="./assets/img/Rectangle1.png" alt="">
             </div>
+            <div class="w-90 h-96 bg-[url('./assets/img/Rectangle1.png')] "></div>
             <div class="textos m-3">
                 <h1>Quem somos</h1>
                 <p class="">A InovaVida Digital nasceu com a missão de transformar o cuidado com a saúde na terceira idade, tornando o acesso à informação, acompanhamento médico e prevenção de doenças mais simples, humano e acessível.
@@ -38,46 +39,87 @@
                 </div>
             </div>
         </section>
-        <img src="./assets/img/Rectangle 3.png" alt="">
-        <div class="textos ml-3">
-            <h1>Oferecemos</h1>
-        </div>
-        <div class="section grid grid-cols-2 gap-2 items-baseline justify-center pl-4 pr-4">
-            <div class="quadro place-items-center">
-                <div class="icon">
-                    <span class="fa6-solid--house-medical"></span>
-                </div>
-                <div class="texto text-center">Lorem ipsum dolor sit amet </div>
+        <img src="./assets/img/Rectangle 3.png" class=" md:w-180 md:h-44 justify-self-center" alt="">
+        <section class=" flex flex-col justify-center max-w-200 mx-auto">
+            <div class="textos ml-3 md:pb-2">
+                <h1>Oferecemos</h1>
             </div>
-            <div class="quadro place-items-center">
-                <div class="icon">
-                    <span class="uil--heart-medical"></span>
+            <div class="section grid grid-cols-2 gap-2 items-baseline justify-center pl-4 pr-4">
+                <div class="quadro place-items-center">
+                    <div class="icon">
+                        <span class="fa6-solid--house-medical"></span>
+                    </div>
+                    <div class="texto text-center">Lorem ipsum dolor sit amet </div>
                 </div>
-                <div class="texto text-center">Lorem ipsum dolor sit amet </div>
-            </div>
-            <div class="quadro place-items-center">
-                <div class="icon">
-                    <span class="wpf--medical-doctor"></span>
+                <div class="quadro place-items-center">
+                    <div class="icon">
+                        <span class="uil--heart-medical"></span>
+                    </div>
+                    <div class="texto text-center">Lorem ipsum dolor sit amet </div>
                 </div>
-                <div class="texto text-center">Lorem ipsum dolor sit amet </div>
-            </div>
-            <div class="quadro place-items-center">
-                <div class="icon">
-                    <span class="mdi--youtube"></span>
+                <div class="quadro place-items-center">
+                    <div class="icon">
+                        <span class="wpf--medical-doctor"></span>
+                    </div>
+                    <div class="texto text-center">Lorem ipsum dolor sit amet </div>
                 </div>
-                <div class="texto text-center">Lorem ipsum dolor sit amet </div>
+                <div class="quadro place-items-center">
+                    <div class="icon">
+                        <span class="mdi--youtube"></span>
+                    </div>
+                    <div class="texto text-center">Lorem ipsum dolor sit amet </div>
+                </div>
             </div>
-        </div>
-        <div class="flex botao justify-end p-3">
-            <a href="./pages/cadastro" class=" bg-yellow-300 rounded-lg p-5 pt-2 pb-2">
-                <p class="text-base font-medium">Entrar</p>
-            </a>
-        </div>
-        <img src="./assets/img/Rectangle 5.png" alt="">
-        <h1>Conteudo recomendado</h1>
-        <div class="section">
+            <div class="flex botao justify-end p-3">
+                <a href="./pages/cadastro" class=" bg-yellow-300 rounded-lg p-5 pt-2 pb-2">
+                    <p class="text-base font-medium">Entrar</p>
+                </a>
+            </div>
+        </section>
+        <img src="./assets/img/itens-medicos.png" class=" md:w-180 md:h-44 justify-self-center" alt="">
+        <section class=" flex flex-col justify-center max-w-200 mx-auto pt-3">
 
-        </div>
+            <h1>Conteudo recomendado</h1>
+            <div class="video m-auto justify-center">
+                <iframe
+                    class=" w-90 h-52 md:w-150 md:h-88"
+                    src="https://www.youtube.com/embed/4UlkCfXf-_U"
+                    title="Vídeo do YouTube"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="div flex flex-col">
+                <h2>Artigos recomendados</h2>
+                <a href="https://tailwindcss.com/docs/background-image" class=" font-bold underline text-blue-600">aobaa</a>
+                <a href="https://tailwindcss.com/docs/background-image" class=" font-bold underline text-blue-600">aobaa</a>
+                <a href="https://tailwindcss.com/docs/background-image" class=" font-bold underline text-blue-600">aobaa</a>
+            </div>
+        </section>
+
+        <footer class=" flex flex-col bg-white mt-20 pt-10 justify-center">
+            <div class="publis flex flex-col pl-10 md:pl-20">
+                <linha class="flex mb-2 items-center">
+                    <span class="material-symbols--sms self-center mr-2"></span>
+                    <p>Nos contate via SMS!</p>
+                </linha>
+                <linha class="flex mb-2 items-center">
+                    <span class="ic--baseline-discord self-center mr-2"></span>
+                    <p>Participe de nosso discord!</p>
+                </linha>
+                <linha class="flex mb-2 items-center">
+                    <span class="ic--baseline-whatsapp self-center mr-2"></span>
+                    <p>Fale conosco no whatsaap!</p>
+                </linha>
+                <linha class="flex mb-2 items-center">
+                    <span class="mdi--youtube2 self-center mr-2"></span>
+                    <p>Assista nossos videos no youtube!</p>
+                </linha>
+            </div>
+            <div class="imagem mr-auto ml-auto flex pb-20">
+                <img class=" w-60" src="./assets/img/logoG2.png" alt="logo">
+            </div>
+        </footer>
     </main>
 </body>
 

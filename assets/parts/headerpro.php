@@ -3,7 +3,7 @@
             <a href="../inicio-proficional">
             <img class=" w-60" src="../../assets/img/logo3.png" alt="logo">
             </a>
-            <a href="../perfil" class="logo md:pr-5">
+            <a href="../p-perfil" class="logo md:pr-5">
                 <span class="mdi--user grandeg"></span>
             </a>
             
