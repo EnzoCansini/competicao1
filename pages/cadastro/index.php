@@ -1,3 +1,9 @@
+<?php 
+
+include_once("../../constante.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="ptbr">
 
@@ -14,7 +20,7 @@
 </head>
 
 <body>
-    <?php include_once("../../assets/parts/header.php") ?>
+    <?php include_once("../../assets/parts/headerC.php") ?>
     <main class="">
         <div class="botao w-90 md:w-full md:pr-10 justify-self-center justify-items-end pt-5 absolute">
             <button type="button" id="backBtn" class=" flex md:fixed items-center gap-3 bg-sky-600 hover:bg-sky-700 w-25 rounded-[10px] justify-center pt-2 pb-2 hidden transition">
@@ -26,11 +32,11 @@
             <img class=" w-60" src="../../assets/img/logoG2.png" alt="logo">
         </div>
         <div class="inputs grid grid-cols-1 justify-self-center justify-items-center gap-3">
-            <form action="../inicio" class=" justify-self-center justify-items-center">
+            <form action="<?= ROOT_PATH ?>assets/src/cadastrarUsuario.php" class=" justify-self-center justify-items-center" method="post">
                 <div id="cadastro1" class="cadastro1 flex flex-col gap-3">
                     <p class="text-2xl text-left text-black">Informe seus dados para criar a <br> sua conta</p>
 
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Nome">
+                    <input type="text" name="txtName" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Nome">
                     <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="CPF">
                     <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Email">
 

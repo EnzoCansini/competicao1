@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <?php include_once("../../assets/parts/header.php") ?>
+    <?php include_once("../../assets/parts/headerC.php") ?>
     <main class="">
         <div class="botao w-90 md:w-full md:pr-10 justify-self-center justify-items-end pt-5 absolute">
             <button type="button" id="backBtn" class=" flex md:fixed items-center gap-3 bg-sky-600 hover:bg-sky-700 w-25 rounded-[10px] justify-center pt-2 pb-2 hidden transition">

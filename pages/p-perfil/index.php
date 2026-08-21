@@ -17,7 +17,7 @@
     <?php include_once("../../assets/parts/headerIn.php") ?>
     <main>
         <div class="botao w-90 md:w-150 pt-3 justify-self-center justify-items-end absolute">
-            <a href="../inicio" class=" flex items-center gap-3 bg-sky-600 hover:bg-sky-700 w-25 rounded-[10px] justify-center pt-2 pb-2 transition">
+            <a href="../inicio-proficional" class=" flex items-center gap-3 bg-sky-600 hover:bg-sky-700 w-25 rounded-[10px] justify-center pt-2 pb-2 transition">
                 <span class="pajamas--go-back"></span>
                 <p class="text-base font-medium">Voltar</p>
             </a>
@@ -34,13 +34,159 @@
                 </button>
             </div>
         </section>
+
         <section class="w-90 md:w-150 justify-self-center gap-3 content-center">
             <div class="card bg-white rounded-[10px] p-2 flex flex-col my-6">
-                <p>Vizualizar indicaodres de saude</p>
-                <a href="../lista-indicadores" type="button" id="submit" class=" flex ml-auto bg-sky-400 hover:bg-sky-500 w-50 md:w-60 rounded-[10px] justify-center pt-2 pb-2 mt-2 transition">
-                    <span class="mdi--eye"></span>
-                    <p class="text-base font-medium">Vizualizar</p>
-                </a>
+                <h3>Selecione os dias que esta disponivel</h3>
+                <div class="dias flex flex-wrap gap-2 items-center justify-center my-4">
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="dia" value="segunda" class="hidden  peer">
+                        <span class="dia flex rounded-[10px] peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            Segunda
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="dia" value="terca" class="hidden peer">
+                        <span class="dia flex rounded-[10px] peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            Terça
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="dia" value="quarta" class="hidden peer">
+                        <span class="dia flex rounded-[10px] peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            Quarta
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="dia" value="quinta" class="hidden peer">
+                        <span class="dia flex rounded-[10px] peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            Quinta
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="dia" value="sexta" class="hidden peer">
+                        <span class="dia flex rounded-[10px] peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            Sexta
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="dia" value="sabado" class="hidden peer">
+                        <span class="dia flex rounded-[10px] peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            Sabado
+                        </span>
+                    </label>
+                </div>
+                <h3>Selecione os horarios que esta disponivel nos dias selecionados</h3>
+                <div class="dias flex flex-wrap gap-2 items-center justify-center my-4">
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="19:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            06:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="07:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            07:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="08:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            08:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="09:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            09:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="10:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            10:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="11:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            11:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="12:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            12:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="13:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            13:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="14:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            14:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="15:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            15:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="16:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            16:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="17:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            17:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="18:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            18:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="19:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            19:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="19:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            20:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="19:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            21:00
+                        </span>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="checkbox" name="hora" value="19:00" class="hidden peer">
+                        <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
+                            22:00
+                        </span>
+                    </label>
+                </div>
+                <div class="botao w-auto justify-end">
+                <button type="submit" id="submit" class=" flex justify-self-end bg-yellow-300 hover:bg-yellow-400 w-50 md:w-60 rounded-[10px] justify-center pt-2 pb-2 mt-2 transition">
+                    <p class="text-base font-medium">Salvar dias e horarios</p>
+                </button>
+                    
+                </div>
             </div>
             <h2>Atualizar dados da conta</h2>
             <form action="../inicio" class=" justify-self-center justify-items-center my-2">
@@ -56,7 +202,7 @@
                     </button>
                 </div>
             </form>
-            
+
             <h2>Mudar sua senha</h2>
             <form action="../inicio" class=" justify-self-center justify-items-center">
                 <div id="cadastro1" class="cadastro1 flex flex-col mt-2 gap-3">
@@ -68,6 +214,11 @@
                     </button>
                 </div>
             </form>
+            <div class="justify-self-center justify-items-center pt-4">
+                <a href="../../" type="button" id="" class=" flex bg-red-500 hover:bg-red-600 w-83 md:w-143 md:ml-7 rounded-[10px] justify-center pt-2 pb-2 transition">
+                    <p class="text-base font-medium">Sair</p>
+                </a>
+            </div>
         </section>
         <?php include_once("../../assets/parts/footer.php") ?>
     </main>

@@ -89,89 +89,89 @@
                             </span>
                         </label>
                     </section>
-                    <section id="etapa2" class="horas flex flex-col items-center justify-center hidden"> 
+                    <section id="etapa2" class="horas flex flex-col items-center justify-center hidden">
                         <div class="textoss w-full justify-start my-2">
-                        <p class="text-xl">Selecione a Hora</p>
-                    </div>
+                            <p class="text-xl">Selecione a Hora</p>
+                        </div>
                         <div class="flex flex-wrap gap-2 items-center justify-center">
-                        <label class="cursor-pointer">
-                            <input type="radio" name="hora" value="07:00" class="hidden hora-opcao">
-                            <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
-                                07:00
-                            </span>
-                        </label>
-                        <label class="cursor-pointer">
-                            <input type="radio" name="hora" value="08:00" class="hidden hora-opcao">
-                            <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
-                                08:00
-                            </span>
-                        </label>
-                        <label class="cursor-pointer">
-                            <input type="radio" name="hora" value="09:00" class="hidden hora-opcao">
-                            <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
-                                09:00
-                            </span>
-                        </label>
-                        <label class="cursor-pointer">
-                            <input type="radio" name="hora" value="10:00" class="hidden hora-opcao">
-                            <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
-                                10:00
-                            </span>
-                        </label>
-                        <label class="cursor-pointer">
-                            <input type="radio" name="hora" value="11:00" class="hidden hora-opcao">
-                            <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
-                                11:00
-                            </span>
-                        </label>
-                        <label class="cursor-pointer">
-                            <input type="radio" name="hora" value="12:00" class="hidden hora-opcao">
-                            <span class="hora flex rounded-[10px] bg-gray-400 border justify-center items-center w-20">
-                                12:00
-                            </span>
-                        </label>
-                        <label class="cursor-pointer">
-                            <input type="radio" name="hora" value="13:00" class="hidden hora-opcao">
-                            <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
-                                13:00
-                            </span>
-                        </label>
-                        <label class="cursor-pointer">
-                            <input type="radio" name="hora" value="14:00" class="hidden hora-opcao">
-                            <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
-                                14:00
-                            </span>
-                        </label>
-                        <label class="cursor-pointer">
-                            <input type="radio" name="hora" value="15:00" class="hidden hora-opcao">
-                            <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
-                                15:00
-                            </span>
-                        </label>
-                        <label class="cursor-pointer">
-                            <input type="radio" name="hora" value="16:00" class="hidden hora-opcao">
-                            <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
-                                16:00
-                            </span>
-                        </label>
-                        <label class="cursor-pointer">
-                            <input type="radio" name="hora" value="17:00" class="hidden hora-opcao">
-                            <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
-                                17:00
-                            </span>
-                        </label>
-                        <label class="cursor-pointer">
-                            <input type="radio" name="hora" value="18:00" class="hidden hora-opcao">
-                            <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
-                                18:00
-                            </span>
-                        </label>
-                        <label class="cursor-pointer">
-                            <input type="radio" name="hora" value="19:00" class="hidden hora-opcao">
-                            <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
-                                19:00
-                            </span>
-                        </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="hora" value="07:00" class="hidden hora-opcao">
+                                <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
+                                    07:00
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="hora" value="08:00" class="hidden hora-opcao">
+                                <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
+                                    08:00
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="hora" value="09:00" class="hidden hora-opcao">
+                                <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
+                                    09:00
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="hora" value="10:00" class="hidden hora-opcao">
+                                <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
+                                    10:00
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="hora" value="11:00" class="hidden hora-opcao">
+                                <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
+                                    11:00
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="hora" value="12:00" class="hidden hora-opcao">
+                                <span class="hora flex rounded-[10px] bg-gray-400 border justify-center items-center w-20">
+                                    12:00
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="hora" value="13:00" class="hidden hora-opcao">
+                                <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
+                                    13:00
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="hora" value="14:00" class="hidden hora-opcao">
+                                <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
+                                    14:00
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="hora" value="15:00" class="hidden hora-opcao">
+                                <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
+                                    15:00
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="hora" value="16:00" class="hidden hora-opcao">
+                                <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
+                                    16:00
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="hora" value="17:00" class="hidden hora-opcao">
+                                <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
+                                    17:00
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="hora" value="18:00" class="hidden hora-opcao">
+                                <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
+                                    18:00
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="hora" value="19:00" class="hidden hora-opcao">
+                                <span class="hora flex rounded-[10px] bg-gray-200 border justify-center items-center w-20">
+                                    19:00
+                                </span>
+                            </label>
                         </div>
                     </section>
                     <section id="etapa3" class="aceitacao flex flex-col gap-2 mt-2 hidden">

@@ -20,7 +20,7 @@
             <h2>Detalhes do atendimento</h2>
         </div>
         <div class="botao w-90 md:pt-3 md:w-150 justify-self-center justify-items-end ">
-            <a href="../atendimento-anteriores" class=" flex items-center my-3 gap-3 bg-sky-600 hover:bg-sky-700 w-25 rounded-[10px] justify-center pt-2 pb-2 transition">
+            <a href="../atendimento-anteriores" class=" flex items-center my-3 z-2 gap-3 bg-sky-600 hover:bg-sky-700 w-25 rounded-[10px] justify-center pt-2 pb-2 transition">
                 <span class="pajamas--go-back"></span>
                 <p class="text-base font-medium">Voltar</p>
             </a>
@@ -34,6 +34,11 @@
                 <p>Paciente: Alan Smith</p>
                 <p>Modalidade: Exercicios</p>
                 <p>Estado: Concluido</p>
+                <p class=" text-base mt-1">Motivo da consulta do paciente:</p>
+                <p>Acompanhar um tratamento</p>
+                <div class="card w-auto h-fit m-4 border border-gray-600 rounded-xl p-2">
+                    <p>Quero acompanhar meu tratamento de coluna</p>
+                </div>
                 <p class="mt-1">Notas do medico:</p>
                 <textarea type="text" rows="3" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] w-83 md:w-143 h-25 pl-1 mt-1" placeholder="Escreva aqui"></textarea>
                 <div class="botao w-full pr- md:pt-3 justify-self-center justify-items-end ">
