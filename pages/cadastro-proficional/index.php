@@ -1,3 +1,9 @@
+<?php
+
+include_once("../../constante.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="ptbr">
 
@@ -22,17 +28,22 @@
                 <p class="text-base font-medium">Voltar</p>
             </button>
         </div>
+        <div class="mensagem w-90 md:w-full md:pr-10 justify-self-center justify-items-end pt-5 absolute">
+            <?php if (isset($mensagem) && isset($cor)) { ?>
+                <p class="alert <?= $cor ?> mt-2"><?= $mensagem?></p>
+            <?php } ?>
+        </div>  
         <div class="imagem flex justify-center mb-6 pt-6">
             <img class=" w-60" src="../../assets/img/logoG2.png" alt="logo">
         </div>
         <div class="inputs grid grid-cols-1 justify-self-center justify-items-center gap-3">
-            <form action="../inicio-proficional" class=" justify-self-center justify-items-center">
+            <form action="<?= ROOT_PATH ?>assets/src/cadastrarUsuario.php" method="POST" class=" justify-self-center justify-items-center">
                 <div id="cadastro1" class="cadastro1 flex flex-col gap-3">
                     <p class="text-2xl text-left text-black">Informe seus dados para criar a <br> sua conta de proficional</p>
 
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Nome">
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="CPF">
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Email">
+                    <input type="text" name="txtNome" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Nome">
+                    <input type="text" name="txtCPF" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="CPF">
+                    <input type="text" name="txtEmail" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Email">
 
                     <button type="button" id="nextBtn" class=" flex bg-sky-500 hover:bg-sky-600 w-83 rounded-[10px] justify-center pt-2 pb-2 transition">
                         <p class="text-base font-medium">Cadastrar</p>
@@ -42,14 +53,14 @@
                 <div id="cadastro2" class="cadastro2 flex flex-col gap-3 hidden">
 
                     <p class="text-2xl text-left text-black">So precisamos de mais alguns <br>dados para criar sua conta</p>
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Telefone">
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Estado">
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Cidadade">
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Rua, Numero">
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Especialidade">
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Registro Proficional">
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Disponibilidade">
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Crie uma senha">
+                    <input type="text" name="txtTelefone" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Telefone">
+                    <input type="text" name="txtEstado" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Estado">
+                    <input type="text" name="txtCidade" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Cidade">
+                    <input type="text" name="txtRua" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Rua, Numero">
+                    <input type="text" name="txtEspecialidade" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Especialidade">
+                    <input type="text" name="txtRegistro" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Registro Proficional">
+                    <input type="text" name="txtDisponibilidade" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Disponibilidade">
+                    <input type="text" name="txtSenha" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Crie uma senha">
 
                     <button type="submit" id="nextBtn" class=" flex bg-sky-500 hover:bg-sky-600 w-83 rounded-[10px] justify-center pt-2 pb-2 transition">
                         <p class="text-base font-medium">Finalizar Cadastro</p>

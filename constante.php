@@ -1,6 +1,7 @@
 <?php
 define('DIR_PATH', realpath(dirname(__FILE__)));
-define('ROOT_PATH', 'http://172.17.34.253:1200/vscodezin/competicao1/');
+define('ROOT_PATH', 'http://localhost/vscodezin/competicao1/');
+// http://localhost/vscodezin/competicao1/pages/cadastro-proficional/
 
 //Garante que a sessão esteja Habilitada
 if (session_status()===PHP_SESSION_NONE){

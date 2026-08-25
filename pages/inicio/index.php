@@ -1,3 +1,9 @@
+<?php
+
+include_once("../../constante.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="ptbr">
 
@@ -18,6 +24,7 @@
     <main>
         <div class="titulo mb-3 w-90 md:w-150 justify-self-center">
             <h1>inicio</h1>
+            <h3 class="text-sm text-gray-500">Bem-vindo de volta, <?php echo $_SESSION['nomeUser']; ?>!</h3>
         </div>
         <div class="card bg-white rounded-[10px] flex-col w-90 md:w-150 justify-self-center p-2">
             <p>Voce Nao possui tem agendamentos</p>

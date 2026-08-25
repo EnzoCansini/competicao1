@@ -1,3 +1,9 @@
+<?php
+
+include_once("../../constante.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="ptbr">
 
@@ -25,15 +31,21 @@
         </div>
         <div class="conteudo justify-center justify-self-center items-center mt-20 w-90">
 
-            <form action="../inicio" class=" justify-self-center justify-items-center">
+<div class="mensagem w-90 md:w-full md:pr-10 justify-self-center justify-items-end pt-5 absolute">
+            <?php if (isset($mensagem) && isset($cor)) { ?>
+                <p class="alert <?= $cor ?> mt-2"><?= $mensagem?></p>
+            <?php } ?>
+        </div> 
+        
+            <form action="<?= ROOT_PATH ?>assets/src/indicadores.php" method="POST" class=" justify-self-center justify-items-center">
 
                 <div id="cadastro1" class="cadastro1 flex flex-col gap-3 w-83">
                     <p class=" text-xl">
                         Para iniciar, precisamos saber seu peso e altura 1
                     </p>
 
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Peso" required>
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Altura" required>
+                    <input type="text" name="txtPeso" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Peso" required>
+                    <input type="text" name="txtAltura" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Altura" required>
 
                     <button type="button" id="nextBtn1" class=" flex bg-yellow-300 hover:bg-yellow-400 w-83 rounded-[10px] justify-center pt-2 pb-2 transition">
                         <p class="text-base font-medium">Proximo</p>
@@ -45,8 +57,8 @@
                         Coloque aqui a sua temperatura corporal e pressao arterial
                     </p>
 
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Pressão: exemplo 120/80 mmHg" required>
-                    <input type="text" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Batimentos: exemplo 72 bpm" required>
+                    <input type="text" name="txtPressao" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Pressão: exemplo 120/80 mmHg" required>
+                    <input type="text" name="txtBatimentos" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-83 pl-1" placeholder="Batimentos: exemplo 72 bpm" required>
 
                     <button type="button" id="nextBtn2" class=" flex bg-yellow-300 hover:bg-yellow-400 w-83 rounded-[10px] justify-center pt-2 pb-2 transition">
                         <p class="text-base font-medium">Proximo</p>
@@ -62,26 +74,12 @@
                         Voce tem alguma doença cronica ou tem alguma observação sobre sua saude, se sim insira aqui
                     </p>
 
-                    <textarea type="text" rows="3" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] w-83 h-25 pl-1 resize-y" placeholder="Escreva aqui"></textarea>
+                    <textarea type="text" name="txtObservacoes" rows="3" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] w-83 h-25 pl-1 resize-y" placeholder="Escreva aqui"></textarea>
 
-                    <button type="button" id="nextBtn3" class=" flex bg-yellow-300 hover:bg-yellow-400 w-83 rounded-[10px] justify-center pt-2 pb-2 transition">
+                    <button type="submit" id="nextBtn3" class=" flex bg-yellow-300 hover:bg-yellow-400 w-83 rounded-[10px] justify-center pt-2 pb-2 transition">
                         <p class="text-base font-medium">Proximo</p>
                     </button>
                     <button type="button" id="backBtn2" class=" flex items-center gap-3 bg-sky-600 hover:bg-sky-700 w-25 rounded-[10px] justify-center h-8 pr-2 pl-2">
-                        <span class="pajamas--go-back"></span>
-                        <p class="text-base font-medium">Voltar</p>
-                    </button>
-                </div>
-
-                <div id="cadastro4" class="cadastro4 flex flex-col gap-3 hidden w-83">
-                    <p class=" text-xl">
-                        Indicadores de saude registrados
-                    </p>
-
-                    <button type="submit" id="submit" class=" flex bg-yellow-300 hover:bg-yellow-400 w-83 rounded-[10px] justify-center pt-2 pb-2 mt-20 transition">
-                        <p class="text-base font-medium">Finalizar Cadastro</p>
-                    </button>
-                    <button type="button" id="backBtn3" class=" flex items-center gap-3 bg-sky-600 hover:bg-sky-700 w-25 rounded-[10px] justify-center h-8 pr-2 pl-2">
                         <span class="pajamas--go-back"></span>
                         <p class="text-base font-medium">Voltar</p>
                     </button>

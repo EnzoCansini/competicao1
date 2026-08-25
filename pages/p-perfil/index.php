@@ -215,7 +215,7 @@
                 </div>
             </form>
             <div class="justify-self-center justify-items-center pt-4">
-                <a href="../../" type="button" id="" class=" flex bg-red-500 hover:bg-red-600 w-83 md:w-143 md:ml-7 rounded-[10px] justify-center pt-2 pb-2 transition">
+                <a href="../../assets/src/logout.php" type="button" id="" class=" flex bg-red-500 hover:bg-red-600 w-83 md:w-143 md:ml-7 rounded-[10px] justify-center pt-2 pb-2 transition">
                     <p class="text-base font-medium">Sair</p>
                 </a>
             </div>

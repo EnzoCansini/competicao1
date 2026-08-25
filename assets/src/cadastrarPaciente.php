@@ -15,16 +15,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $estado = filter_input(INPUT_POST, "txtEstado", FILTER_SANITIZE_SPECIAL_CHARS);
         $cidade = filter_input(INPUT_POST, "txtCidade", FILTER_SANITIZE_SPECIAL_CHARS);
         $rua = filter_input(INPUT_POST, "txtRua", FILTER_SANITIZE_SPECIAL_CHARS);
-        $especialidade = filter_input(INPUT_POST, "txtEspecialidade", FILTER_SANITIZE_SPECIAL_CHARS);
-        $registro = filter_input(INPUT_POST, "txtRegistro", FILTER_SANITIZE_SPECIAL_CHARS);
-        $disponibilidade = filter_input(INPUT_POST, "txtDisponibilidade", FILTER_SANITIZE_SPECIAL_CHARS);
         $senha = filter_input(INPUT_POST, "txtSenha", FILTER_SANITIZE_SPECIAL_CHARS);
 
         $senhaCriptografada = password_hash($senha, PASSWORD_DEFAULT);
 
         try {
-            $sql = "INSERT INTO usuario (Nome, Email, CPF, Telefone, Estado, Cidade, Rua, Registro_Profissional, Senha) 
-                    VALUES (:nome, :email, :cpf, :telefone, :estado, :cidade, :rua, :registro, :senha)";
+            $sql = "INSERT INTO paciente (Nome, Email, CPF, Telefone, Estado, Cidade, Rua, Senha) 
+                    VALUES (:nome, :email, :cpf, :telefone, :estado, :cidade, :rua, :senha)";
             $insert = $conexao->prepare($sql);
             $insert->bindParam(":nome", $nome);
             $insert->bindParam(":email", $email);
@@ -33,13 +30,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $insert->bindParam(":estado", $estado);
             $insert->bindParam(":cidade", $cidade);
             $insert->bindParam(":rua", $rua);
-            $insert->bindParam(":registro", $registro);
             $insert->bindParam(":senha", $senhaCriptografada);
 
             if ($insert->execute() && $insert->rowCount() > 0){
                 $_SESSION['mensagem'] = "Cadastrado com Sucesso!";
                 $_SESSION['cor'] = 'alert-success';
-                header("Location: " . ROOT_PATH . "pages/cadastro-proficional");
+                header("Location: " . ROOT_PATH . "pages/login");
                 exit;
 
             } else {
@@ -49,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } catch (Exception $e) {
             $_SESSION['mensagem'] = "Ocorreu um erro ao cadastrar / Usuario ja Cadastrado!";
             $_SESSION['cor'] = 'alert-danger';
-            header("Location: " . ROOT_PATH . "pages/cadastro-proficional");
+            header("Location: " . ROOT_PATH . "pages/cadastro");
             exit;
 
         } finally {
@@ -59,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $_SESSION['mensagem'] = "Obrigatório preencher todos os campos";
         $_SESSION['cor'] = 'alert-danger';
-        header("Location: " . ROOT_PATH . "pages/cadastro-proficional");
+        header("Location: " . ROOT_PATH . "pages/cadastro");
         exit;
     }
 }
