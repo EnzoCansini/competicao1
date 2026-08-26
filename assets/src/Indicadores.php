@@ -3,15 +3,11 @@
 include_once("../../constante.php");
 include_once("../../service/conexao.php");
 
-var_dump($_POST);
-var_dump($_SESSION);
-
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    if (!empty($_POST['txtPeso']) && !empty($_POST['txtAltura']) && !empty($_POST['txtPressao'])) {
+    if (!empty($_POST['txtPeso']) && !empty($_POST['txtAltura']) && !empty($_POST['txtPressao']) && !empty($_SESSION['idUser'])) {
 
-        $id_paciente = $_SESSION['id_paciente'];
+        $id_paciente = $_SESSION['idUser'];
         $peso = filter_input(INPUT_POST, "txtPeso", FILTER_SANITIZE_SPECIAL_CHARS);
         $altura = filter_input(INPUT_POST, "txtAltura", FILTER_SANITIZE_SPECIAL_CHARS);
         $pressao = filter_input(INPUT_POST, "txtPressao", FILTER_SANITIZE_SPECIAL_CHARS);
@@ -21,8 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
         try {
-            $sql = "INSERT INTO indicadores (Peso, Altura, Pressao, Batimentos, Campo_Livre, ID_Paciente) 
-                    VALUES (:peso, :altura, :pressao, :batimentos, :campo_livre, :id_paciente)";
+            $sql = "INSERT INTO indicadores (ID_Paciente, Data_Registro, Hora_Registro, Peso, Altura, Pressao, Batimentos, Campo_Livre)
+                VALUES (:id_paciente, CURRENT_DATE(), CURRENT_TIME(), :peso, :altura, :pressao, :batimentos, :campo_livre)";
             $insert = $conexao->prepare($sql);
             $insert->bindParam(":id_paciente", $id_paciente);
             $insert->bindParam(":peso", $peso);
@@ -33,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             if ($insert->execute() && $insert->rowCount() > 0){
                 $_SESSION['mensagem'] = "Cadastrado com Sucesso!";
-                $_SESSION['cor'] = 'alert-success';
+                $_SESSION['cor'] = $verde;
                 header("Location: " . ROOT_PATH . "pages/confirma-indicadores");
                 exit;
 
@@ -43,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         } catch (Exception $e) {
             $_SESSION['mensagem'] = "Ocorreu um erro ao cadastrar / Usuario ja Cadastrado!";
-            $_SESSION['cor'] = 'alert-danger';
+            $_SESSION['cor'] = $vermelho;
             header("Location: " . ROOT_PATH . "pages/registrar-indicadores");
             exit;
 
@@ -53,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     } else {
         $_SESSION['mensagem'] = "Obrigatório preencher todos os campos";
-        $_SESSION['cor'] = 'alert-danger';
+        $_SESSION['cor'] = $vermelho;
         header("Location: " . ROOT_PATH . "pages/registrar-indicadores");
         exit;
     }

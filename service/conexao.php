@@ -2,7 +2,7 @@
 //conexao com o banco de dados
 
 $dbHost = "localhost";
-$dbNomeBanco="sistema";
+$dbNomeBanco="sistema1";
 $dbUser="root";
 $dbPassword="";
 $dbPort="3306";

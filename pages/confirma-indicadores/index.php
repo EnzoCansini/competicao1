@@ -38,13 +38,9 @@ include_once("../../constante.php");
                         Indicadores de saude registrados
                     </p>
 
-                    <button type="submit" id="submit" class=" flex bg-yellow-300 hover:bg-yellow-400 w-83 rounded-[10px] justify-center pt-2 pb-2 mt-20 transition">
+                    <a href="../../pages/inicio" type="submit" id="submit" class=" flex bg-yellow-300 hover:bg-yellow-400 w-83 rounded-[10px] justify-center pt-2 pb-2 mt-20 transition">
                         <p class="text-base font-medium">Finalizar Cadastro</p>
-                    </button>
-                    <button type="button" id="backBtn3" class=" flex items-center gap-3 bg-sky-600 hover:bg-sky-700 w-25 rounded-[10px] justify-center h-8 pr-2 pl-2">
-                        <span class="pajamas--go-back"></span>
-                        <p class="text-base font-medium">Voltar</p>
-                    </button>
+                    </a>
                 </div>
             </form>
         </div>
