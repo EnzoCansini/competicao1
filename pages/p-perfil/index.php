@@ -79,7 +79,7 @@
                 <h3>Selecione os horarios que esta disponivel nos dias selecionados</h3>
                 <div class="dias flex flex-wrap gap-2 items-center justify-center my-4">
                     <label class="cursor-pointer">
-                        <input type="checkbox" name="hora" value="19:00" class="hidden peer">
+                        <input type="checkbox" name="hora" value="06:00" class="hidden peer">
                         <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
                             06:00
                         </span>
@@ -163,19 +163,19 @@
                         </span>
                     </label>
                     <label class="cursor-pointer">
-                        <input type="checkbox" name="hora" value="19:00" class="hidden peer">
+                        <input type="checkbox" name="hora" value="20:00" class="hidden peer">
                         <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
                             20:00
                         </span>
                     </label>
                     <label class="cursor-pointer">
-                        <input type="checkbox" name="hora" value="19:00" class="hidden peer">
+                        <input type="checkbox" name="hora" value="21:00" class="hidden peer">
                         <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
                             21:00
                         </span>
                     </label>
                     <label class="cursor-pointer">
-                        <input type="checkbox" name="hora" value="19:00" class="hidden peer">
+                        <input type="checkbox" name="hora" value="22:00" class="hidden peer">
                         <span class="hora flex rounded-[10px]  peer-checked:bg-blue-400 peer-checked:border-blue-500 peer-checked:font-bold bg-gray-200 border justify-center items-center w-20">
                             22:00
                         </span>
