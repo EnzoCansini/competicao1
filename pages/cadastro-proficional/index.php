@@ -39,7 +39,7 @@ include_once("../../constante.php");
         <div class="inputs grid grid-cols-1 justify-self-center justify-items-center gap-3">
             <form action="<?= ROOT_PATH ?>assets/src/cadastrarUsuario.php" method="POST" class=" justify-self-center justify-items-center">
                 <div id="cadastro1" class="cadastro1 flex flex-col gap-3 w-90 md:w-150 justify-self-center content-center">
-                    <p class="text-2xl text-left text-black">Informe seus dados para criar a <br> sua conta de proficional</p>
+                    <p class="text-2xl text-left text-black">Informe seus dados para criar a sua conta de proficional</p>
 
                     <input type="text" name="txtNome" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-full pl-1" placeholder="Nome">
                     <input type="text" name="txtCPF" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-full pl-1" placeholder="CPF">
