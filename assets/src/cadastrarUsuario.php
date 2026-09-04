@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $estado = trim((string) filter_input(INPUT_POST, "txtEstado", FILTER_SANITIZE_SPECIAL_CHARS));
         $cidade = trim((string) filter_input(INPUT_POST, "txtCidade", FILTER_SANITIZE_SPECIAL_CHARS));
         $rua = trim((string) filter_input(INPUT_POST, "txtRua", FILTER_SANITIZE_SPECIAL_CHARS));
+        $categoria = trim((string) filter_input(INPUT_POST, "txtEspecialidade", FILTER_SANITIZE_SPECIAL_CHARS));
         $registro = trim((string) filter_input(INPUT_POST, "txtRegistro", FILTER_SANITIZE_SPECIAL_CHARS));
         $senha = (string) $_POST['txtSenha'];
 
@@ -50,8 +51,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $conexao->beginTransaction();
 
-            $sql = "INSERT INTO usuario (Nome, Email, CPF, Telefone, Estado, Cidade, Rua, Registro_Profissional, Senha) 
-                    VALUES (:nome, :email, :cpf, :telefone, :estado, :cidade, :rua, :registro, :senha)";
+            $sql = "INSERT INTO usuario (Nome, Email, CPF, Telefone, Estado, Cidade, Rua, Categoria, Registro_Profissional, Senha) 
+                    VALUES (:nome, :email, :cpf, :telefone, :estado, :cidade, :rua, :categoria, :registro, :senha)";
             $insert = $conexao->prepare($sql);
             $insert->bindParam(":nome", $nome);
             $insert->bindParam(":email", $email);
@@ -60,6 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $insert->bindParam(":estado", $estado);
             $insert->bindParam(":cidade", $cidade);
             $insert->bindParam(":rua", $rua);
+            $insert->bindParam(":categoria", $categoria);
             $insert->bindParam(":registro", $registro);
             $insert->bindParam(":senha", $senhaCriptografada);
 

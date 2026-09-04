@@ -25,56 +25,44 @@
         <div class="titulo mb-3 w-90 md:w-150 justify-self-center justify-center">
             <h1>Selecione a categoria do atendimento</h1>
         </div>
-        <div class="itens grid grid-cols-2 gap-5 w-90 md:grid-cols-3 md:w-135 justify-self-center">
-            <a href="../motivo-atendimento" class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40">
+        <form action="../motivo-atendimento/index.php" method="POST" class="itens grid grid-cols-2 gap-5 w-90 md:grid-cols-3 md:w-135 justify-self-center">
+            <button type="submit" name="categoria" value="Nutricionista" class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40 w-full">
                 <div class="icone justify-self-center">
                     <span class="uil--heart-medical grandegrid"></span>
                 </div>
-                <p class=" justify-self-center text-xl">Cardiovascular</p>
-            </a>
-            <div class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40">
+                <p class=" justify-self-center text-xl">Nutricionista</p>
+            </button>
+            <button type="submit" name="categoria" value="Cardiologista" class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40 w-full">
                 <div class="icone justify-self-center">
                     <span class="uil--heart-medical grandegrid"></span>
                 </div>
-                <p class=" justify-self-center text-xl">Cardiovascular</p>
-            </div>
-            <div class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40">
+                <p class=" justify-self-center text-xl">Cardiologista</p>
+            </button>
+            <button type="submit" name="categoria" value="Fisioterapeuta" class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40 w-full">
                 <div class="icone justify-self-center">
                     <span class="uil--heart-medical grandegrid"></span>
                 </div>
-                <p class=" justify-self-center text-xl">Cardiovascular</p>
-            </div>
-            <div class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40">
+                <p class=" justify-self-center text-xl">Fisioterapeuta</p>
+            </button>
+            <button type="submit" name="categoria" value="Farmacêutico" class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40 w-full">
                 <div class="icone justify-self-center">
                     <span class="uil--heart-medical grandegrid"></span>
                 </div>
-                <p class=" justify-self-center text-xl">Cardiovascular</p>
-            </div>
-            <div class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40">
+                <p class=" justify-self-center text-xl">Farmacêutico</p>
+            </button>
+            <button type="submit" name="categoria" value="Neurologista" class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40 w-full">
                 <div class="icone justify-self-center">
                     <span class="uil--heart-medical grandegrid"></span>
                 </div>
-                <p class=" justify-self-center text-xl">Cardiovascular</p>
-            </div>
-            <div class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40">
+                <p class=" justify-self-center text-xl">Neurologista</p>
+            </button>
+            <button type="submit" name="categoria" value="Psicólogo" class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40 w-full">
                 <div class="icone justify-self-center">
                     <span class="uil--heart-medical grandegrid"></span>
                 </div>
-                <p class=" justify-self-center text-xl">Cardiovascular</p>
-            </div>
-            <div class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40">
-                <div class="icone justify-self-center">
-                    <span class="uil--heart-medical grandegrid"></span>
-                </div>
-                <p class=" justify-self-center text-xl">Cardiovascular</p>
-            </div>
-            <div class="item bg-sky-400 flex-col justify-center rounded-[10px] h-40">
-                <div class="icone justify-self-center">
-                    <span class="uil--heart-medical grandegrid"></span>
-                </div>
-                <p class=" justify-self-center text-xl">Cardiovascular</p>
-            </div>
-        </div>
+                <p class=" justify-self-center text-xl">Psicólogo</p>
+            </button>
+        </form>
         <?php include_once("../../assets/parts/footer.php") ?>
     </main>
 

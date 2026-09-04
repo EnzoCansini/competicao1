@@ -57,7 +57,15 @@ include_once("../../constante.php");
                     <input type="text" name="txtEstado" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-full pl-1" placeholder="Estado">
                     <input type="text" name="txtCidade" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-full pl-1" placeholder="Cidade">
                     <input type="text" name="txtRua" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-full pl-1" placeholder="Rua, Numero">
-                    <input type="text" name="txtEspecialidade" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-full pl-1" placeholder="Especialidade">
+                    <label for="txtEspecialidade" class="text-lg font-medium">Escolha sua especialidade:</label>
+                    <select name="txtEspecialidade" class="bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-full pl-1" id="txtEspecialidade">
+                        <option value="Cardiologista">Cardiologista</option>
+                        <option value="Nutricionista">Nutricionista</option>
+                        <option value="Fisioterapeuta" selected>Fisioterapeuta</option>
+                        <option value="Psicologo">Psicólogo</option>
+                        <option value="Neurologista">Neurologista</option>
+                        <option value="Farmaceutico">Farmacêutico</option>
+                    </select>
                     <input type="text" name="txtRegistro" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-full pl-1" placeholder="Registro Proficional">
 
                     <div class="card bg-white rounded-[10px] p-2 flex flex-col my-6 w-90 md:w-150 justify-self-center gap-3 content-center">
