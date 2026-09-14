@@ -20,7 +20,7 @@ $idUser = $_SESSION['idUser'] ?? "";
 $nomeUser = $_SESSION['nomeUser'] ?? "";
 
 
-//corzinhas
+// corzinhas
 $vermelho = "bg-red-50 text-red-700 border-red-200";
 $amarelo = "bg-yellow-50 text-yellow-700 border-yellow-200";
 $verde = "bg-green-50 text-green-700 border-green-200";

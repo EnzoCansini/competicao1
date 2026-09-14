@@ -1,3 +1,9 @@
+<?php
+include_once("../../constante.php");
+
+$categoria = $_POST['categoria'] ?? '';
+var_dump($_POST);
+?>
 <!DOCTYPE html>
 <html lang="ptbr">
 

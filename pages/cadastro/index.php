@@ -52,7 +52,7 @@ include_once("../../constante.php");
 
                 <div id="cadastro2" class="cadastro2 flex flex-col gap-3 w-90 md:w-150 justify-self-center content-center hidden">
 
-                    <p class="text-2xl text-left text-black">So precisamos de mais alguns <br>dados para criar sua conta</p>
+                    <p class="text-2xl text-left text-black">So precisamos de mais alguns dados para criar sua conta</p>
                     <input type="text" name="txtTel" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-full pl-1" placeholder="Telefone">
                     <input type="text" name="txtEstado" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-full pl-1" placeholder="Estado">
                     <input type="text" name="txtCidade" class=" bg-white border-2 border-gray-700 focus:border-black rounded-[10px] h-9.5 w-full pl-1" placeholder="Cidade">
